@@ -354,7 +354,8 @@ def load_plugins(options: Options, errors: Errors) -> Tuple[Plugin, Dict[str, st
         try:
             module = importlib.import_module(module_name)
         except Exception:
-            print(os.walk('.'))
+            print(list(os.walk('.')))
+            print(sys.path)
             raise
             # plugin_error("Error importing plugin '{}'".format(plugin_path))
         finally:
