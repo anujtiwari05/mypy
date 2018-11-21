@@ -110,6 +110,8 @@ if USE_MYPYC:
     # ... and add back in the one test module we need
     mypyc_targets.append('test/visitors.py')
 
+    mypyc_targets = ['util.py']
+
     # Fix the paths to be full
     mypyc_targets = [os.path.join('mypy', x) for x in mypyc_targets]
 
