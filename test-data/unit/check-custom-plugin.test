@@ -64,7 +64,7 @@ plugins=missing.py
 tmp/mypy.ini:2: error: Can't find plugin 'tmp/missing.py'
 --' (work around syntax highlighting)
 
-[case testMissingPlugin]
+[case testMissingPlugin-skip]
 # flags: --config-file tmp/mypy.ini
 [file mypy.ini]
 [[mypy]
