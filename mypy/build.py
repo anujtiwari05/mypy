@@ -356,7 +356,7 @@ def load_plugins(options: Options, errors: Errors) -> Tuple[Plugin, Dict[str, st
         except Exception:
             print(os.walk('.'))
             raise
-            plugin_error("Error importing plugin '{}'".format(plugin_path))
+            # plugin_error("Error importing plugin '{}'".format(plugin_path))
         finally:
             if plugin_dir is not None:
                 assert sys.path[0] == plugin_dir
